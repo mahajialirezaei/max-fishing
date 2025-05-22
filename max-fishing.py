@@ -11,7 +11,7 @@ def start(grid, m, n):
 
 
 def check(grid, i, j, visited):
-    pass
+    return i>=0 and j>=0 and i < len(grid) and j < len(grid[i]) and tuple([i, j]) not in visited
 
 
 def maxFishing(grid, m, n, i, j, visited, cur):
